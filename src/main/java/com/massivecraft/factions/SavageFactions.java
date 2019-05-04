@@ -392,8 +392,8 @@ public class SavageFactions extends MPlugin {
 
 	public void replaceStringInConfig(String path, String stringToReplace, String replacementString) {
 		if (getConfig().getString(path).equals(stringToReplace)) {
-			// SavageFactions.plugin.log("Replacing legacy material '" + stringToReplace + "' with '" + replacementString + "' for config node '" + path + "'.");
-			// log("Replacing legacy material '" + stringToReplace + "' with '" + replacementString + "' for config node '" + path + "'.");
+			 SavageFactions.plugin.log("Replacing legacy material '" + stringToReplace + "' with '" + replacementString + "' for config node '" + path + "'.");
+			 log("Replacing legacy material '" + stringToReplace + "' with '" + replacementString + "' for config node '" + path + "'.");
 
 			getConfig().set(path, replacementString);
 		}
@@ -454,7 +454,7 @@ public class SavageFactions extends MPlugin {
 			// Dont save, as this is kind of pointless, as the /f config command manually saves.
 			// So any edits done are saved, this way manual edits to json can go through.
 
-			// Conf.save();
+			 Conf.save();
 		}
 
 		if (AutoLeaveTask != null) {
@@ -481,7 +481,7 @@ public class SavageFactions extends MPlugin {
 
 	@Override
 	public void postAutoSave() {
-		//Board.getInstance().forceSave(); Not sure why this was there as it's called after the board is already saved.
+		Board.getInstance().forceSave(); Not sure why this was there as it's called after the board is already saved.
 		Conf.save();
 	}
 
