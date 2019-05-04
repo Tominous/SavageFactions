@@ -11,7 +11,7 @@
 # Turn this on if you are having issues with something and working on resolving them.
 # This will spam your console with information that is useful if you know how to read the source.
 # It's suggested that you only turn this on at the direction of a developer.
-debug: false
+debug: true
 
 
 
@@ -22,7 +22,7 @@ debug: false
 #   set log to true and it will be logged to console as "player tried to show a faction map too soon and triggered exploit blocker."
 findfactionsexploit:
   cooldown: 2000 # in miliseconds. 2000 = 2 seconds.
-  log: false
+  log: true
 
 ### Hard Core Settings ###
 # Many of the features that are / are to come in this section have been requested by
@@ -128,7 +128,7 @@ scoreboard:
   # {warps} - the number of warps that a faction has set.
   # The title of the scoreboard will be the Faction's tag and colored according to the relation with the player's Faction.
   # Commenting this section out will cause the info to appear in chat as the plugin originally did.
-  finfo-enabled: false
+  finfo-enabled: true
 
   # SUPPORTS PLACEHOLDERS
   finfo:
@@ -160,12 +160,12 @@ scoreboard:
 
   default:
     - "&7&m--------------------------"
-    - "&4&lFaction Info &8»"
+    - "&4&lFaction Information &8»"
     - " &8> &cLeader&7: &f{leader}"
     - " &8> &cMembers&7: &f{online}&7/&f{members}"
     - " &8> &cPower&7: &f{power}&7/&f{maxPower}"
     - "&m"
-    - "&4&lFaction Stats &8»"
+    - "&4&lFaction Statistics &8»"
     - " &8> &cKills&7: &f{faction-kills}"
     - " &8> &cDeaths&7: &f{faction-deaths}"
     - " &8> &cBalance&7: &f{faction-balance}"
@@ -181,7 +181,7 @@ scoreboard:
     - " &8> &cRank&7: &f{group}"
     - " &8> &cBalance&7: &f${balance}"
     - "&m"
-    - "&4&lServer Info &8» "
+    - "&4&lServer Information &8» "
     - " &8» &cIFaction: &fN/A"
     - " &8» &cOnline Players&7: &f{total-online}"
     - "&7&m---------------------------"
@@ -370,9 +370,9 @@ help:
     - '&e/f claim &8- &7Claim a land for your faction.'
     - '&e/f unclaim &8- &7Unclaim land from your faction.'
     - '&e/f kick &f<playerName> &8- &7Kick player from your faction.'
-    - '&e/f mod &f<playerName> &8- &7Set player to mod role in faction.'
-    - '&e/f coleader &f<playerName> &8- &7Set player to coleader role in faction.'
-    - '&e/f leader &f<playerName> &8- &7Set player role to leader in faction.'
+    - '&e/f mod &f<playerName> &8- &7Set player to the Moderator role in faction.'
+    - '&e/f coleader &f<playerName> &8- &7Set player to Co-Leader role in faction.'
+    - '&e/f leader &f<playerName> &8- &7Set player role to Leader in faction.'
     - '&e/f chat &f<Faction | Ally | Public> &8- &7Switch to Faction/Ally/Public chat.'
     - '&e/f warp &8- &7Opens the warp menu.'
     - '&e/f setwarp &8- &7Set a warp.'
@@ -707,7 +707,7 @@ faction-disband-broadcast: true
 # |              Faction Invisibility                    | #
 # +------------------------------------------------------+ #
 ############################################################
-See-Invisible-Faction-Members: false
+See-Invisible-Faction-Members: true
 
 ############################################################
 # +------------------------------------------------------+ #
